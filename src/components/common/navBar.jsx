@@ -1,13 +1,14 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class NavBar extends Component {
   state = {};
   render() {
     return (
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          Navbar
-        </a>
+        <div class="navbar-brand" href="#">
+          Vidly
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -24,10 +25,10 @@ class NavBar extends Component {
             <NavLink className="nav-item nav-link" to="/movies">
               Movies
             </NavLink>
-            <NavLink className="nav-item nav-link" to="/movies">
+            <NavLink className="nav-item nav-link" to="/customers">
               Customers
             </NavLink>
-            <NavLink className="nav-item nav-link" to="/movies">
+            <NavLink className="nav-item nav-link" to="/rentals">
               Rentals
             </NavLink>
           </div>
